@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 @font-face {
   font-family: 'Cyberway Riders';
-  src: url('/cyberway_riders/Cyberway\ Riders.otf') format('opentype');
+  src: url('cyberway_riders/Cyberway\ Riders.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
