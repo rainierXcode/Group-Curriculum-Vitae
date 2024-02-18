@@ -73,13 +73,13 @@
   position: absolute;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   top: 25px;
-  left: 40px;
+  left: 3vw;
   font-family: var(--ff-secondary);
 }
 
 #teamPortfolio {
   position: absolute;
-  left: 150px;
+  left: 10vw;
   top: 20%;
 }
 
@@ -100,7 +100,7 @@
   padding: 5px 15px;
   border-radius: 20px;
   border: transparent;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   background-color: #ffca41;
   transition: color 100ms ease-out;
 }
@@ -110,12 +110,25 @@
   color: #ffca41;
 }
 
-#illustration {
-  top: 10%;
-  right: 5%;
+#illustrationContainer {
+  box-sizing: border-box;
   position: absolute;
-  z-index: 3;
-  width: 700px;
+  width: 65%;
+  height: fit-content;
+  border: 1px solid;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+}
+
+#illustrationContainer > img {
+  width: 600px;
+  aspect-ratio: 1/1;
+  object-fit: fill;
 }
 
 .choice {
@@ -123,77 +136,69 @@
   min-height: 100vh;
 }
 
-@media screen and (max-width: 1200px) {
-  #teamPortfolio {
-    left: 75px;
+@media screen and (max-width: 1000px) {
+  #illustrationContainer {
+    padding-left: 0%;
   }
 
-  #illustration {
-    width: 600px;
-    right: 0%;
-    top: 30%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #teamPortfolio {
-    top: 35%;
-  }
-  #illustration {
+  #illustrationContainer > img {
     width: 500px;
-    right: 0%;
-    top: 10%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #illustrationContainer > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .rightShape__colored {
     clip-path: polygon(19% 0, 100% 0%, 100% 100%, 0 100%, 55% 57%);
     width: 100%;
   }
 
-  .rightShape,
-  .leftShape {
+  #illustrationContainer {
+    width: 100%;
+    padding-left: 15%;
+    top: 5%;
+  }
+
+  #illustrationContainer > img {
+    width: 80%;
+  }
+
+  #teamPortfolio {
+    left: 5vw;
+    top: 35%;
+  }
+
+  .leftShape,
+  .rightShape {
     display: none;
   }
-
-  #illustration {
-    right: 10px;
-  }
-
-  #teamPortfolio {
-    left: 40px;
-  }
 }
 
-@media screen and (max-width: 580px) {
-  #illustration {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 370px) {
   .rightShape__colored {
-    clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 70% 57%);
+    clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0 100%, 76% 51%);
   }
 
-  #logo {
-    left: 15px;
-  }
-
-  #teamPortfolio {
-    left: 20px;
-  }
-}
-
-@media screen and (max-width: 341px) {
-  .rightShape__colored {
-    clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 88% 57%);
+  #illustrationContainer {
+    padding-left: 20%;
   }
 }
 
 @media screen and (max-width: 250px) {
   .rightShape__colored {
-    clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 100% 56%);
+    clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%, 96% 52%);
+  }
+
+  #teamPortfolio > div {
+    font-size: 15vw;
+  }
+
+  #illustrationContainer > img {
+    width: 100%;
   }
 }
