@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Arimo';
+  src: url('../assets/fonts/Arimo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --clr-primary: rgb(75, 41, 102);
   --clr-team: rgb(78, 78, 78);
@@ -21,6 +28,7 @@
 
   --ff-primary: 'Days One', sans-serif;
   --ff-secondary: 'Cyberway Riders', sans-serif;
+  --ff-arimo: 'Arimo, sans-serif';
 
   --fw-regular: 400;
   --fw-semi-bold: 600;
