@@ -76,6 +76,20 @@
   overflow: hidden;
 }
 
+.home > * {
+  animation: fadeIn ease 1s 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .leftShape {
   width: 30%;
   height: 95%;
@@ -113,6 +127,19 @@
   aspect-ratio: 1/1.5;
   background-color: #4b2966;
   clip-path: polygon(0% 0%, 21% 31%, 100% 50%, 0 100%, 0% 100%);
+  animation-name: slideInLeft;
+  animation-delay: 2s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .rightShape__colored {
@@ -125,6 +152,19 @@
   right: 0;
   clip-path: polygon(0% 0%, 100% 0%, 100% 98.5%, 12.4% 94.58%, 37.53% 53.52%);
   z-index: 1;
+  animation-name: slideInRight;
+  animation-delay: 2s;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .rightShape {
@@ -221,6 +261,20 @@
   display: flex;
   justify-content: flex-start;
   padding-left: 10%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 #illustrationContainer > img {
