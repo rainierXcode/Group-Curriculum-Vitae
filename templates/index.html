@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
+    <div id="splash">
+      <div class="loader"></div>
+    </div>
     <div class="home">
       <div class="leftShape"></div>
+      <div class="leftShape__colored"></div>
       <div class="rightShape__colored"></div>
       <div class="rightShape"></div>
       <div class="introContent">
@@ -17,7 +21,9 @@
         <div id="teamPortfolio">
           <div id="team__text">team</div>
           <div id="portfolio__text">portfolio</div>
-          <button id="teamPortfolio__discover">Discover</button>
+          <a id="teamPortfolio__discover" href="#profile__gridContainer"
+            >Discover</a
+          >
         </div>
       </div>
       <div id="illustrationContainer">
@@ -25,6 +31,27 @@
       </div>
     </div>
 
-    <div class="choice"></div>
+    <section class="profileSection">
+      <ul id="profile__gridContainer">
+        <li>
+          <div class="profile__role">
+            <div>WEB</div>
+            <div>DEVELOPER</div>
+          </div>
+          <div class="profile__name">RAINIER</div>
+          <div class="profile__picFrame">
+            <img
+              src="../assets/images/profiles/formal__rainier.svg"
+              alt="formal__rainier.png"
+            />
+          </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
   </body>
 </html>

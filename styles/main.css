@@ -12,17 +12,12 @@
   font-style: normal;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: var(--ff-primary);
-}
-
 :root {
   --clr-primary: rgb(75, 41, 102);
   --clr-team: rgb(78, 78, 78);
   --clr-portfolio: rgb(252, 46, 95);
   --clr-yellow: rgb(255, 202, 65);
+  --clr-role: rgb(180, 30, 66);
 
   --ff-primary: 'Days One', sans-serif;
   --ff-secondary: 'Cyberway Riders', sans-serif;
@@ -30,4 +25,24 @@
   --fw-regular: 400;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
