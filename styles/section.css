@@ -60,10 +60,30 @@
 #profile__gridContainer .profile__picFrame {
   position: absolute;
   right: 10px;
-  top: -25px;
+  top: 0px;
   bottom: 25px;
-  width: 55%;
+  width: 50%;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.6));
+}
+
+#profile__gridContainer #rainierPicFrame {
+  top: -50px;
+}
+
+#profile__gridContainer #andreaPicFrame {
+  top: -20px;
+}
+
+#profile__gridContainer #enzoPicFrame {
+  top: -8px;
+}
+
+#profile__gridContainer #justinePicFrame {
+  top: 5px;
+}
+
+#profile__gridContainer #jenniePicFrame {
+  top: -25px;
 }
 
 #profile__gridContainer .profile__picFrame > img {
