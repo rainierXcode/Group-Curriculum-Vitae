@@ -21,7 +21,7 @@
 
 #graditudeShape > #gratitudeMeet {
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 3rem);
   color: #b41e42;
 }
 
@@ -31,20 +31,9 @@
 }
 
 #graditudeShape > div {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5rem, 2rem);
   color: #a392b1;
-  /* transition: opacity 1s ease; */
 }
-/* 
-#graditudeShape > .graditudeHidden {
-  opacity: 0;
-  transform: translate3d(0, 100%, 0);
-}
-
-#graditudeShape > .graditudeShow {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-} */
 
 .fadeOutDown {
   animation: 1s fadeOutDown ease-in-out;
@@ -124,4 +113,15 @@
 
 .slideOutRight {
   animation: 500ms slideOutRight;
+}
+
+@media screen and ((max-width: 662px)) {
+  #graditudeShape > div {
+    font-size: clamp(1rem, 1.2rem, 2rem);
+    text-align: center;
+  }
+
+  #graditudeShape {
+    padding-inline: 10px;
+  }
 }

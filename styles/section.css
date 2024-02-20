@@ -136,3 +136,15 @@
 #profile__gridContainer a:hover .profile__RLogo {
   opacity: 0;
 }
+
+@media screen and (max-width: 970px) {
+  #profile__gridContainer {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media screen and (max-width: 638px) {
+  #profile__gridContainer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
