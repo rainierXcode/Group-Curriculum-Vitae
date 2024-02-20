@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Days One';
+  src: url('../assets/fonts/DaysOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#back {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}
+
+#back > div {
+  width: 35px;
+  height: 35px;
+  border: 3px solid #303034;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: 300ms zoomIn;
+}
+#back > div > svg {
+  transition: transform 300ms ease-in-out;
+}
+
+#back:hover > div > svg {
+  transform: translateX(-2px);
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+#downloadButton {
+  background-color: rgb(255, 202, 65);
+  text-decoration: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 1.1rem;
+  font-family: 'Days One', sans-serif;
+}
+
+#downloadButton:hover {
+  background-color: #000;
+  color: rgb(255, 202, 65);
+}
