@@ -43,42 +43,6 @@ body {
   background-color: white;
 }
 
-#back {
-  position: absolute;
-  top: 45px;
-  left: 20px;
-}
-
-#back > div {
-  width: 35px;
-  height: 35px;
-  border: 3px solid #303034;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  animation: 300ms zoomIn;
-}
-#back > div > svg {
-  transition: transform 300ms ease-in-out;
-}
-
-#back:hover > div > svg {
-  transform: translateX(-2px);
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
 .container {
   max-width: 800px;
   min-height: 1100px;
@@ -88,19 +52,6 @@ body {
   display: flex;
   overflow: hidden;
   position: relative;
-  animation: scaleUp 1s ease forwards;
-}
-
-@keyframes scaleUp {
-  from {
-    opacity: 0;
-    scale: 0;
-  }
-
-  to {
-    opacity: 1;
-    scale: 1;
-  }
 }
 
 .leftContainer {
