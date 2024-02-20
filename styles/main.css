@@ -43,6 +43,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: var(--ff-primary);
+  box-sizing: border-box;
 }
 
 ul,

@@ -25,13 +25,18 @@
   gap: 30px;
 }
 
-#profile__gridContainer li {
+#profile__gridContainer a {
   height: 220px;
   background: #ffca41;
   background: linear-gradient(180deg, #ffca41 0%, #e0aeff 70%);
   border-radius: 20px;
   border: 2px solid white;
   position: relative;
+  transition: height 300ms ease-in-out;
+}
+
+#profile__gridContainer a:hover {
+  height: 230px;
 }
 
 #profile__gridContainer .profile__role {
@@ -102,7 +107,6 @@
   font-family: var(--ff-arimo);
   left: 50%;
   transform: translateX(-50%);
-  visibility: hidden;
   opacity: 0;
   transition: all 300ms ease;
 }
@@ -115,22 +119,20 @@
   font-family: var(--ff-secondary);
   font-size: 3rem;
   opacity: 1;
-  visibility: visible;
   transition: all 300ms ease;
 }
 
-#profile__gridContainer li:hover .profile__role,
-#profile__gridContainer li:hover .profile__name,
-#profile__gridContainer li:hover .clickMore {
+#profile__gridContainer a:hover .profile__role,
+#profile__gridContainer a:hover .profile__name,
+#profile__gridContainer a:hover .clickMore {
   visibility: visible;
   opacity: 1;
 }
 
-#profile__gridContainer li:hover .profile__picFrame > img {
+#profile__gridContainer a:hover .profile__picFrame > img {
   filter: blur(0);
 }
 
-#profile__gridContainer li:hover .profile__RLogo {
+#profile__gridContainer a:hover .profile__RLogo {
   opacity: 0;
-  visibility: hidden;
 }

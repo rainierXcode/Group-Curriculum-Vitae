@@ -151,6 +151,7 @@
   bottom: 0;
   right: 0;
   clip-path: polygon(0% 0%, 100% 0%, 100% 98.5%, 12.4% 94.58%, 37.53% 53.52%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 98.5%, 11.65% 89.83%, 37.53% 53.52%);
   z-index: 1;
   animation-name: slideInRight;
   animation-delay: 2s;
@@ -173,10 +174,11 @@
   height: calc(100%);
   background-color: #a392b1;
   clip-path: polygon(0% 0%, 99.5% 0%, 99.5% 99.5%, 14.65% 99.5%, 48.6% 73.18%);
+  clip-path: polygon(0% 0%, 99.5% 0%, 99.5% 99.5%, 14.65% 99.5%, 42.05% 68.93%);
   top: 0;
   bottom: 0;
   right: 0;
-  transform: translateY(30px) rotate(11deg);
+  transform: translateY(30px) rotate(12deg);
 }
 
 .rightShape::before {

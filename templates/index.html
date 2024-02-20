@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group Portfolio</title>
+    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/intro.css" />
     <link rel="stylesheet" href="../styles/section.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/gratitude.css" />
+    <script src="../scripts/scroll.js" defer></script>
   </head>
   <body>
     <div id="splash">
@@ -32,111 +34,129 @@
       </div>
     </div>
 
+    <section id="gratitude">
+      <svg
+        width="0"
+        height="0"
+        viewBox="0 0 0 0"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0; pointer-events: none"
+      >
+        <clipPath id="graditudeShape" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0,0.187 L0.495,0 L1,0.187 V0.784 L0.534,0.992 C0.508,1,0.481,1,0.455,0.99 L0,0.768 V0.187"
+            fill="white"
+          />
+        </clipPath>
+      </svg>
+
+      <div id="graditudeShape">
+        <div class="graditudeHidden">Thank you for getting to know us!</div>
+        <div class="graditudeHidden">
+          Explore our stories for connection and inspiration.
+        </div>
+        <div id="gratitudeMeet" class="graditudeHidden">
+          MEET OUR VABRIANT TEAM BELOW
+        </div>
+      </div>
+    </section>
+
+    <div id="profileGraditude"></div>
+
     <section class="profileSection">
       <ul id="profile__gridContainer">
-        <li>
-          <a href="">
-            <div class="profile__RLogo">R</div>
-            <div class="profile__role">
-              <div>WEB</div>
-              <div>DEVELOPER</div>
-            </div>
-            <div class="profile__name">RAINIER</div>
-            <div class="profile__picFrame" id="rainierPicFrame">
-              <img
-                src="../assets/images/profiles/formal__rainier.svg"
-                alt="formal__rainier.png"
-              />
-            </div>
-            <div class="clickMore">Click to view information</div></a
-          >
-        </li>
-        <li>
-          <a href="">
-            <div class="profile__RLogo">R</div>
-            <div class="profile__role">
-              <div>UI/UX</div>
-              <div>DESIGNER</div>
-            </div>
-            <div class="profile__name">ANDREA</div>
-            <div class="profile__picFrame" id="andreaPicFrame">
-              <img
-                src="../assets/images/profiles/formal__andrea.svg"
-                alt="formal__andrea.png"
-              />
-            </div>
-            <div class="clickMore">Click to view information</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="profile__RLogo">R</div>
-            <div class="profile__role">
-              <div>SYSTEM</div>
-              <div>ANALYST</div>
-            </div>
-            <div class="profile__name">ENZO</div>
-            <div class="profile__picFrame" id="enzoPicFrame">
-              <img
-                src="../assets/images/profiles/formal__enzo.svg"
-                alt="formal__enzo.png"
-              />
-            </div>
-            <div class="clickMore">Click to view information</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="profile__RLogo">R</div>
-            <div class="profile__role">
-              <div>WEB</div>
-              <div>DEVELOPER</div>
-            </div>
-            <div class="profile__name">JUSTINE</div>
-            <div class="profile__picFrame" id="justinePicFrame">
-              <img
-                src="../assets/images/profiles/formal__justine.svg"
-                alt="formal__justine.png"
-              />
-            </div>
-            <div class="clickMore">Click to view information</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="profile__RLogo">R</div>
-            <div class="profile__role">
-              <div>SYSTEM</div>
-              <div>ANANLYST</div>
-            </div>
-            <div class="profile__name">JENNIE</div>
-            <div class="profile__picFrame" id="jenniePicFrame">
-              <img
-                src="../assets/images/profiles/formal__jennie.svg"
-                alt="formal__jennie.png"
-              />
-            </div>
-            <div class="clickMore">Click to view information</div>
-          </a>
-        </li>
+        <a href="../templates/cv/rainier.html" class="firstLine">
+          <div class="profile__RLogo">R</div>
+          <div class="profile__role">
+            <div>WEB</div>
+            <div>DEVELOPER</div>
+          </div>
+          <div class="profile__name">RAINIER</div>
+          <div class="profile__picFrame" id="rainierPicFrame">
+            <img
+              src="../assets/images/profiles/formal__rainier.svg"
+              alt="formal__rainier.png"
+            />
+          </div>
+          <div class="clickMore">Click to view information</div>
+        </a>
+        <a class="firstLine">
+          <div class="profile__RLogo">R</div>
+          <div class="profile__role">
+            <div>UI/UX</div>
+            <div>DESIGNER</div>
+          </div>
+          <div class="profile__name">ANDREA</div>
+          <div class="profile__picFrame" id="andreaPicFrame">
+            <img
+              src="../assets/images/profiles/formal__andrea.svg"
+              alt="formal__andrea.png"
+            />
+          </div>
+          <div class="clickMore">Click to view information</div>
+        </a>
+        <a class="firstLine">
+          <div class="profile__RLogo">R</div>
+          <div class="profile__role">
+            <div>SYSTEM</div>
+            <div>ANALYST</div>
+          </div>
+          <div class="profile__name">ENZO</div>
+          <div class="profile__picFrame" id="enzoPicFrame">
+            <img
+              src="../assets/images/profiles/formal__enzo.svg"
+              alt="formal__enzo.png"
+            />
+          </div>
+          <div class="clickMore">Click to view information</div>
+        </a>
+        <a href="../templates/cv/justine.html" class="secondLine">
+          <div class="profile__RLogo">R</div>
+          <div class="profile__role">
+            <div>WEB</div>
+            <div>DEVELOPER</div>
+          </div>
+          <div class="profile__name">JUSTINE</div>
+          <div class="profile__picFrame" id="justinePicFrame">
+            <img
+              src="../assets/images/profiles/formal__justine.svg"
+              alt="formal__justine.png"
+            />
+          </div>
+          <div class="clickMore">Click to view information</div>
+        </a>
+        <a class="secondLine">
+          <div class="profile__RLogo">R</div>
+          <div class="profile__role">
+            <div>SYSTEM</div>
+            <div>ANANLYST</div>
+          </div>
+          <div class="profile__name">JENNIE</div>
+          <div class="profile__picFrame" id="jenniePicFrame">
+            <img
+              src="../assets/images/profiles/formal__jennie.svg"
+              alt="formal__jennie.png"
+            />
+          </div>
+          <div class="clickMore">Click to view information</div>
+        </a>
 
-        <li>
-          <a href="">
-            <div class="profile__RLogo">R</div>
-            <div class="profile__role">
-              <div>UI/UX</div>
-              <div>DESIGNER</div>
-            </div>
-            <div class="profile__name">JEREMY</div>
-            <div class="profile__picFrame">
-              <img
-                src="../assets/images/profiles/formal__jeremy.svg"
-                alt="formal__jeremy.png"
-              />
-            </div>
-            <div class="clickMore">Click to view information</div>
-          </a>
-        </li>
+        <a class="secondLine">
+          <div class="profile__RLogo">R</div>
+          <div class="profile__role">
+            <div>UI/UX</div>
+            <div>DESIGNER</div>
+          </div>
+          <div class="profile__name">JEREMY</div>
+          <div class="profile__picFrame">
+            <img
+              src="../assets/images/profiles/formal__jeremy.svg"
+              alt="formal__jeremy.png"
+            />
+          </div>
+          <div class="clickMore">Click to view information</div>
+        </a>
       </ul>
     </section>
   </body>
