@@ -42,7 +42,7 @@ const profileObserverRight = new IntersectionObserver((entries) => {
   });
 });
 
-graditudeObserver.observe(document.getElementById('gratitudeMeet'));
+// graditudeObserver.observe(document.getElementById('gratitudeMeet'));
 const firstLine = document.querySelectorAll('.firstLine');
 const secondLine = document.querySelectorAll('.secondLine');
 
