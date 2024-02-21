@@ -1,23 +1,3 @@
-const graditudeObserver = new IntersectionObserver(
-  (entries) => {
-    const allText = document.querySelectorAll('#graditudeShape > div');
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        allText.forEach((text) => {
-          text.classList.add('fadeInUp');
-          text.classList.remove('fadeOutDown');
-        });
-      } else {
-        allText.forEach((text) => {
-          text.classList.add('fadeOutDown');
-          text.classList.remove('fadeInUp');
-        });
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
-
 const profileObserverLeft = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -42,7 +22,6 @@ const profileObserverRight = new IntersectionObserver((entries) => {
   });
 });
 
-// graditudeObserver.observe(document.getElementById('gratitudeMeet'));
 const firstLine = document.querySelectorAll('.firstLine');
 const secondLine = document.querySelectorAll('.secondLine');
 
@@ -52,4 +31,36 @@ firstLine.forEach((box) => {
 
 secondLine.forEach((box) => {
   profileObserverRight.observe(box);
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+const splitTypes = document.querySelectorAll('.reveal-type');
+
+splitTypes.forEach((char, i) => {
+  const bg = char.dataset.bgColor;
+  const fg = char.dataset.fgColor;
+
+  const text = new SplitType(char, { types: 'chars' });
+
+  gsap.fromTo(
+    text.chars,
+    {
+      color: bg,
+    },
+    {
+      color: fg,
+      duration: 0.3,
+      stagger: 0.1,
+      opacity: 0.2,
+      scrollTrigger: {
+        trigger: char,
+        start: 'top 80%',
+        end: 'top 20%',
+        scrub: true,
+        markers: false,
+        toggleActions: 'play play reverse reverse',
+      },
+    }
+  );
 });
